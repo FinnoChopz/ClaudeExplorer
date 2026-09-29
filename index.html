@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rule Explorer</title>
+<style>
+  :root { --bg:#0e1116; --fg:#d7dde5; --dim:#7d8896; --on:#f2b84b; --card:#171b22; --line:#262d38; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#f6f4ef; --fg:#1d232b; --dim:#6b7480; --on:#b5570f; --card:#fff; --line:#ddd8cc; }
+  }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 ui-sans-serif,system-ui,sans-serif; }
+  main { max-width:920px; margin:0 auto; padding:20px 16px 40px }
+  h1 { font-size:20px; margin:0 0 2px } p.sub { margin:0 0 16px; color:var(--dim) }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px }
+  .row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-bottom:12px }
+  label { display:flex; gap:8px; align-items:center; color:var(--dim) }
+  input[type=number] { width:76px; font:inherit; padding:4px 6px; background:var(--bg); color:var(--fg); border:1px solid var(--line); border-radius:6px }
+  input[type=range] { width:min(320px,60vw) }
+  button { font:inherit; color:var(--fg); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:4px 10px; cursor:pointer }
+  button:hover { border-color:var(--on) }
+  canvas { width:100%; image-rendering:pixelated; border-radius:6px; background:var(--bg); display:block }
+  .bits { display:flex; gap:6px; flex-wrap:wrap }
+  .bit { text-align:center; cursor:pointer; user-select:none; font:12px ui-monospace,monospace; color:var(--dim) }
+  .bit i { display:grid; grid-template-columns:repeat(3,10px); gap:1px; margin-bottom:2px }
+  .bit i b { width:10px; height:10px; background:var(--line) } .bit i b.on { background:var(--fg) }
+  .bit span { display:block; width:34px; height:20px; line-height:20px; border-radius:4px; border:1px solid var(--line); margin:0 auto }
+  .bit span.on { background:var(--on); color:var(--bg); border-color:var(--on); font-weight:700 }
+  .note { color:var(--dim); font-size:13px; margin-top:10px }
+</style>
+</head>
+<body>
+<main>
+  <h1>Rule Explorer</h1>
+  <p class="sub">256 tiny programs. Click the eight output bits to write your own, or scrub the rule number.</p>
+  <div class="panel">
+    <div class="row">
+      <label>Rule <input id="num" type="number" min="0" max="255" value="110"></label>
+      <input id="slider" type="range" min="0" max="255" value="110" aria-label="rule number">
+      <button id="rand">random rule</button>
+      <label><input id="rs" type="checkbox"> random start</label>
+    </div>
+    <div class="bits" id="bits" aria-label="rule table"></div>
+    <div class="note" id="eq"></div>
+    <div style="height:12px"></div>
+    <canvas id="c"></canvas>
+  </div>
+  <p class="note">Each row is the next generation of the one above; edges wrap around. Rules 30, 90, 110 and 54 are good places to start. Python CLI and tests live in <code>ca.py</code>.</p>
+</main>
+<script>
+const W = 201, H = 140, $ = id => document.getElementById(id);
+const canvas = $('c'), ctx = canvas.getContext('2d');
+canvas.width = W; canvas.height = H;
+canvas.style.aspectRatio = W + ' / ' + H;
+
+let rule = 110;
+
+function mirror(r){ let o=0; for(let n=0;n<8;n++){ const m=((n&1)<<2)|(n&2)|(n>>2); o|=((r>>n)&1)<<m } return o }
+function complement(r){ let o=0; for(let n=0;n<8;n++) o|=(1-((r>>(7-n))&1))<<n; return o }
+
+function draw(){
+  const t = Array.from({length:8}, (_, i) => (rule >> i) & 1);
+  let row = new Uint8Array(W);
+  if ($('rs').checked) for (let i=0;i<W;i++) row[i] = Math.random() < .5 ? 1 : 0;
+  else row[W >> 1] = 1;
+  const img = ctx.createImageData(W, H);
+  const on = getComputedStyle(document.documentElement).getPropertyValue('--on').trim();
+  const bg = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim();
+  const rgb = s => { const c = document.createElement('canvas').getContext('2d'); c.fillStyle = s; c.fillRect(0,0,1,1); return c.getImageData(0,0,1,1).data };
+  const A = rgb(on), B = rgb(bg);
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const p = (y*W + x) * 4, c = row[x] ? A : B;
+      img.data[p]=c[0]; img.data[p+1]=c[1]; img.data[p+2]=c[2]; img.data[p+3]=255;
+    }
+    const nx = new Uint8Array(W);
+    for (let x = 0; x < W; x++)
+      nx[x] = t[(row[(x+W-1)%W] << 2) | (row[x] << 1) | row[(x+1)%W]];
+    row = nx;
+  }
+  ctx.putImageData(img, 0, 0);
+}
+
+function renderBits(){
+  $('bits').innerHTML = '';
+  for (let n = 7; n >= 0; n--) {
+    const d = document.createElement('div'); d.className = 'bit';
+    d.innerHTML = '<i>' + [4,2,1].map(b => `<b class="${n & b ? 'on' : ''}"></b>`).join('') + '</i>'
+      + `<span class="${(rule >> n) & 1 ? 'on' : ''}">${(rule >> n) & 1}</span>`;
+    d.onclick = () => set(rule ^ (1 << n));
+    $('bits').appendChild(d);
+  }
+}
+
+function set(r){
+  rule = Math.max(0, Math.min(255, r | 0));
+  $('num').value = $('slider').value = rule;
+  const eq = [...new Set([rule, mirror(rule), complement(rule), mirror(complement(rule))])].sort((a,b)=>a-b);
+  $('eq').textContent = 'Behaves like: ' + eq.join(', ') + ' (mirror / complement)';
+  renderBits(); draw();
+}
+
+$('num').oninput = e => set(+e.target.value || 0);
+$('slider').oninput = e => set(+e.target.value);
+$('rand').onclick = () => set(Math.floor(Math.random() * 256));
+$('rs').onchange = draw;
+set(110);
+</script>
+</body>
+</html>
