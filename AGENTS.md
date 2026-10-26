@@ -1,8 +1,31 @@
 # Research collaboration contract
 
-Read `docs/THREE_DRAFTS.md`, `docs/START_HERE.md`, the latest journal entry,
-and the real decision record before starting research. No operating mode is
-selected yet. All three policy files are drafts for Finn to compare.
+Read `decisions/collaboration.json`, `docs/GUIDED_FIRST_PASS.md`,
+`docs/START_HERE.md`, and the latest journal entry before continuing.
+Finn selected guided mode for the first pass. Bounded mode is the intended
+primary starter system afterward; it is not active yet.
+
+## Current pace: slow guided first pass
+
+- Work through one meaningful conceptual or implementation step at a time.
+  Pause for discussion before advancing to the next step, not merely after a
+  complete experiment. A one-run budget is not a teaching pace by itself.
+- Explain the big-picture purpose, show the smallest relevant local code or
+  configuration, and connect it to one concrete example. Define new terms in
+  plain language when introducing them.
+- Finn wants to read and understand how each step works. He need not write
+  the code or master every line. Select the code that explains the mechanism;
+  do not use a module dump or a programming exercise as the entry point.
+- Distinguish a scientific choice from a routine implementation choice. Handle
+  routine details, expose choices that change the question or interpretation,
+  and do not turn participation into an approval checklist or a quiz.
+- Reuse the existing bootstrap measurements, clearly labeled as prior work.
+  A tiny teaching demonstration is not a new hypothesis test or a new finding.
+- Record only demonstrated progress. Selecting guided mode does not imply
+  selecting a hypothesis, authorizing every experiment, understanding a step,
+  or agreeing with an interpretation.
+- Move to bounded mode after discussing the first pass with Finn. Do not
+  promote automatically after a timer, test result, or number of lessons.
 
 ## Finn's role
 

@@ -2,7 +2,10 @@
 
 These are alternative operating modes for one small shared environment, not
 three competing software stacks. The shared starter is implemented on a review
-branch; Finn has not selected a mode or approved a scientific conclusion.
+branch. Finn selected **draft 1 for a slow, in-depth first pass**, then **draft 2
+as the intended primary starter system**. Draft 2 is not active yet. This
+selects the collaboration approach, not a hypothesis or scientific conclusion.
+Start with [the guided walkthrough](GUIDED_FIRST_PASS.md).
 
 The aim is to learn how a model works while actively doing the investigation.
 Claude/Codex contributes ideas, experiments, diagnostics, and criticism. Finn
@@ -10,8 +13,8 @@ supplies scientific taste, interpretation, and decisions about direction.
 
 | Draft | How a session feels | Agent freedom | Finn's decision points | Main merit | Cost or weakness |
 | --- | --- | --- | --- | --- | --- |
-| **1. Guided bench** | Work through one puzzle together. | One listed experiment, up to 10 compute minutes, then a discussion. | Choose each hypothesis and next test; interpret each result. | Best for acquiring intuition and detecting a misleading explanation early. | More interruptions; related checks take several exchanges. |
-| **2. Bounded research partner** | Choose a question together; let the agent work briefly; return to the evidence together. | Up to three listed related runs or 20 total compute minutes, whichever comes first. | Choose the question, falsifier, and permitted tests; decide what the evidence means and what happens next. | Best balance of involvement and useful independent progress. **Recommended starting mode.** | A surprising avenue outside the list waits for a scope decision. |
+| **1. Guided bench** | Discuss every meaningful step, including purpose and local implementation. | One listed experiment, up to 10 compute minutes, with pauses before and within the investigation. | Understand each move; choose each hypothesis and next test; interpret each result. | **Selected first pass.** Best for building intuition. | More conversation between steps. |
+| **2. Bounded research partner** | Choose a question together; let the agent work briefly; return to the evidence together. | Up to three listed related runs or 20 total compute minutes, whichever comes first. | Choose the question, falsifier, and permitted tests; decide what the evidence means and what happens next. | **Intended primary system after the guided pass.** | A surprising avenue outside the list waits for a scope decision. |
 | **3. Branching expedition** | Agree on a small investigation tree, then review competing explanations together. | Up to eight listed runs or one total compute hour; agent chooses which authorized branches to pursue. | Approve the question/tree, decide when to narrow it, judge claims and next direction. | More room to investigate unexpected results and compare rival mechanisms. | More output and greater risk of arriving after the most instructive moments. |
 
 Time caps cover runner compute, not the duration of a conversation. Output
@@ -43,7 +46,7 @@ learning the tooling. This would be a good first evening on the M2 Max.
 
 ## Draft 2: bounded research partner
 
-**First automata session:** Finn selects "is this metric robust to the finite
+**Illustrative automata session:** Finn could select "is this metric robust to the finite
 simulation setup?" The agent proposes the existing baseline, width, and horizon
 configuration cards. Finn can revise that scope. Within the selected cards the
 agent chooses the order, inspects a surprise, and returns with the cheapest

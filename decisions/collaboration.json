@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-26",
+  "decision_maker": "Finn",
+  "decision_source": "explicit_user_instruction",
+  "status": "selected",
+  "active_mode": "guided",
+  "active_policy": "policies/1-guided.json",
+  "pace": "Slow and in depth, one meaningful step at a time",
+  "explanation_scope": ["big-picture scientific purpose", "relevant local implementation"],
+  "user_code_authoring_required": false,
+  "user_mastery_of_all_code_required": false,
+  "next_mode": {
+    "id": "bounded",
+    "status": "intended_primary_starter_system_not_active",
+    "transition": "Discuss the first pass with Finn before increasing autonomy"
+  },
+  "scientific_question": null,
+  "scientific_interpretation": null,
+  "learning_progress": "First walkthrough step prepared; understanding not yet assessed"
+}

@@ -4,6 +4,7 @@
   "max_runs": 1,
   "max_wall_seconds": 600,
   "max_output_bytes": 8388608,
-  "check_in": "After each experiment. Finn selects every next hypothesis.",
+  "check_in": "Discuss each meaningful step before moving on, including within an experiment.",
+  "teaching_pace": "Explain the purpose, the smallest relevant implementation, and a concrete example. Finn need not write or master every line of code.",
   "scope": "One question and one preselected configuration."
 }

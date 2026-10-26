@@ -4,7 +4,18 @@ The default path needs only Python 3.11 or 3.12 and Git. It installs nothing,
 starts no server, and makes no API calls. The existing automata explorer still
 works with its original commands.
 
-## Now: inspect and reproduce the lightweight trial
+## Current route: guided first pass
+
+Finn selected a slow first pass: understand each big-picture move and the
+relevant local implementation without having to write or master all the code.
+Begin with [GUIDED_FIRST_PASS.md](GUIDED_FIRST_PASS.md). Discuss one step at a
+time. Bounded mode is the intended primary system once we have walked through
+the process together; do not activate it automatically.
+
+## Reference commands: reproduce the lightweight trial later
+
+These are reference commands, not a batch to execute at the beginning of the
+guided session. Existing measurements are already in the bootstrap evidence.
 
 From the repository root:
 
@@ -25,9 +36,10 @@ The bootstrap evidence in `evidence/bootstrap-ca.json` was measured with local
 source hashes, not a fictitious clean upstream checkout. Use it with the
 journal and source provenance. Future runs should start from a committed tree.
 
-## Start a collaborative session after choosing a draft
+## Start an experiment after discussing its question and scope
 
-Finn first selects the operating mode, scientific question, and scope. The
+The operating mode is guided. Finn still selects the scientific question and
+scope when we reach an actual hypothesis test. The
 agent writes the actual answers into a new decision JSON using
 `decisions/session.example.json` as its schema. Keep real working decisions
 under ignored `sessions/`, unless Finn deliberately wants to publish one.
@@ -38,10 +50,10 @@ and exact `allowed_configs` paths. The field values are a record of the
 conversation, not proof of a person's identity. An agent must not set these
 without a real matching decision. No real decision record is included yet.
 
-For draft 2, once the actual decision exists:
+For the selected guided mode, once the actual experiment decision exists:
 
 ```bash
-python3 -m research.session start policies/2-bounded.json sessions/decision.json sessions/current.json
+python3 -m research.session start policies/1-guided.json sessions/decision.json sessions/current.json
 python3 -m research.session run sessions/current.json configs/ca_baseline.json
 ```
 

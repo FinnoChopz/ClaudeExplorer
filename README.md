@@ -28,19 +28,22 @@ python ca.py equiv 110               # -> [110, 124, 137, 193]
   computational richness; a better metric would look at transients or
   gliders. That's the obvious next thing to try.
 
-## Draft AI research environment
+## AI research environment: guided first pass
 
 The original explorer above is preserved. A dependency-free research starter
 now adds reproducible experiment cards, provenance, tests, a journal, and three
-alternative collaboration workflows for Finn to choose:
+collaboration workflows. Finn selected a slow guided first pass, followed by
+bounded mode as the intended primary starter system.
 
+- [Begin the guided first pass](docs/GUIDED_FIRST_PASS.md)
 - [Compare the three drafts](docs/THREE_DRAFTS.md)
 - [Run the lightweight trial](docs/START_HERE.md)
 - [Inspect the concrete neural intervention](docs/NEURAL_EXPERIMENT.md)
 - [Read the actual bootstrap observations](journal/0001-bootstrap.md)
 - [Agent collaboration contract](AGENTS.md)
 
-No operating mode has been selected. The neural runner is scaffolding until
+Guided mode is selected; scientific questions and interpretations remain
+open for discussion. The neural runner is scaffolding until
 its optional dependencies, real hooks, tokenizer checks, and pretrained run
 are validated on the target Mac. No neural libraries or models are needed for
 `python -m unittest -v` or the cellular automata trial.
