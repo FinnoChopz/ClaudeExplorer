@@ -1,0 +1,19 @@
+name: Lightweight research checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  stdlib:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest -v
+      - run: python -m research.ca_trial configs/ca_baseline.json
+      - run: python -m research.ca_trial configs/ca_boundary.json

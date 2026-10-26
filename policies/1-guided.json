@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "guided",
+  "max_runs": 1,
+  "max_wall_seconds": 600,
+  "max_output_bytes": 8388608,
+  "check_in": "After each experiment. Finn selects every next hypothesis.",
+  "scope": "One question and one preselected configuration."
+}

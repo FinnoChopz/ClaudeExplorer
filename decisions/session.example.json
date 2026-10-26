@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "awaiting_Finn",
+  "decision_maker": null,
+  "policy_id": null,
+  "question": null,
+  "prediction": null,
+  "what_would_change_my_mind": null,
+  "allowed_configs": [],
+  "note": "Populate from Finn's actual answers. Never infer an approval."
+}

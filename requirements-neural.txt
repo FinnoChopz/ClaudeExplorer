@@ -1,0 +1,5 @@
+# Optional. Install only in a clean environment after the M2 Max arrives.
+# Direct dependencies are pinned; capture a resolved platform lock with pip freeze.
+# This dependency combination has not yet been installed/validated on the Mac.
+torch==2.9.0
+transformers==4.57.1

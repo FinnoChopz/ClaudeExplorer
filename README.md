@@ -27,3 +27,24 @@ python ca.py equiv 110               # -> [110, 124, 137, 193]
   randomness forward. Compressibility measures apparent disorder, not
   computational richness; a better metric would look at transients or
   gliders. That's the obvious next thing to try.
+
+## Draft AI research environment
+
+The original explorer above is preserved. A dependency-free research starter
+now adds reproducible experiment cards, provenance, tests, a journal, and three
+alternative collaboration workflows for Finn to choose:
+
+- [Compare the three drafts](docs/THREE_DRAFTS.md)
+- [Run the lightweight trial](docs/START_HERE.md)
+- [Inspect the concrete neural intervention](docs/NEURAL_EXPERIMENT.md)
+- [Read the actual bootstrap observations](journal/0001-bootstrap.md)
+- [Agent collaboration contract](AGENTS.md)
+
+No operating mode has been selected. The neural runner is scaffolding until
+its optional dependencies, real hooks, tokenizer checks, and pretrained run
+are validated on the target Mac. No neural libraries or models are needed for
+`python -m unittest -v` or the cellular automata trial.
+
+The trial diagnoses affine Boolean rules; it does not establish a universal
+complexity score. Rule 105 is affine (XOR plus a constant), rather than strictly
+linear. Finite ring width and run length also affect compression results.

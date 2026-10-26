@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "bounded",
+  "max_runs": 3,
+  "max_wall_seconds": 1200,
+  "max_output_bytes": 8388608,
+  "check_in": "After at most three related runs or twenty compute minutes.",
+  "scope": "One Finn-selected question; only listed follow-up configurations."
+}

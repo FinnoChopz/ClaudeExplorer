@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "CA-003",
+  "kind": "ca",
+  "phase": "exploratory",
+  "question": "Does ring width alone change the compression comparison?",
+  "prediction_status": "agent_proposal_not_selected_by_Finn",
+  "rules": [
+    0,
+    204,
+    60,
+    90,
+    105,
+    150,
+    30,
+    54,
+    110
+  ],
+  "width": 128,
+  "steps": 200,
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ]
+}

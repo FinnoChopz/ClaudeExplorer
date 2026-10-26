@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "NN-001",
+  "kind": "neural_ioi",
+  "phase": "exploratory",
+  "model_id": "openai-community/gpt2",
+  "model_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "device": "mps",
+  "dtype": "float32",
+  "candidate_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "random_seeds": [
+    17,
+    23,
+    41
+  ],
+  "baseline_min_fraction": 0.75,
+  "control_tolerance": 0.001,
+  "unrelated_prompt": "The weather forecast says that tomorrow will be",
+  "development": {
+    "templates": [
+      "When {a} and {b} went to the store, {subject} gave a book to",
+      "After {a} and {b} arrived at the park, {subject} handed a drink to"
+    ],
+    "name_pairs": [
+      [
+        "John",
+        "Mary"
+      ],
+      [
+        "Tom",
+        "James"
+      ]
+    ]
+  },
+  "held_out": {
+    "templates": [
+      "While {a} and {b} were at the office, {subject} sent a letter to",
+      "As {a} and {b} left the cafe, {subject} passed a note to"
+    ],
+    "name_pairs": [
+      [
+        "Alice",
+        "Bob"
+      ],
+      [
+        "David",
+        "Sarah"
+      ]
+    ]
+  },
+  "run_stage": "intervention"
+}

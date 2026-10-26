@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "expedition",
+  "max_runs": 8,
+  "max_wall_seconds": 3600,
+  "max_output_bytes": 16777216,
+  "check_in": "After at most eight related runs or one compute hour.",
+  "scope": "One Finn-selected question and an explicitly authorized hypothesis tree."
+}

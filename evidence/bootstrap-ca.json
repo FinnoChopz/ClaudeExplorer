@@ -1,0 +1,2872 @@
+{
+  "experiments": [
+    {
+      "config": {
+        "id": "CA-001",
+        "kind": "ca",
+        "phase": "exploratory",
+        "prediction_status": "agent_proposal_not_selected_by_Finn",
+        "question": "Does high incompressibility coexist with exact affine simplicity?",
+        "rules": [
+          0,
+          204,
+          60,
+          90,
+          105,
+          150,
+          30,
+          54,
+          110
+        ],
+        "schema_version": 1,
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "steps": 200,
+        "width": 101
+      },
+      "label": "baseline",
+      "manifest": {
+        "config_sha256": "9f654e90941fd905e28cf7d49619c716017d4413f634e8f1ff8da23ab8c78c51",
+        "git_commit": "c3002271ebe4106ca1602bdd00ab9fd7673e6110",
+        "git_dirty": true,
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14",
+        "source_sha256": {
+          "ca.py": "5342d724ce93834573002496a4f1133b4850ced09723cd4a68ba81e19c1f9b98",
+          "research/__init__.py": "a5861da428e5ebe1d13c90bd11e441f627eb52643728f78c09a0aa54f3e243d8",
+          "research/ca_trial.py": "c40e3194ec7a39490d6302d7dc0bdc3ddf5d71a062bafcc4b72dfa670b3120b7",
+          "research/common.py": "ac7e7e161653ae907bc7e637348771c91760db10b70525b41dd60a820f0c3a91",
+          "research/session.py": "8766c718cb2f4501c15b6fd7b85e2e8d0fef37c0457b0637ecd08a0ec0aca0cf"
+        },
+        "upstream_commit": "07635fdfb53f6a1a4e9b38488ab48c8febc56e58",
+        "zlib": "1.3.2"
+      },
+      "results": {
+        "claim_limit": "Affine structure is not computational richness. No replacement complexity metric has been validated.",
+        "human_interpretation": null,
+        "records": [
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 1,
+            "superposition_defect": 0.4966257819811832
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8339073861461921,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 1,
+            "superposition_defect": 0.4922910201467908
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.567929582854956,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 1,
+            "superposition_defect": 0.49593616078025715
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015690776884806735,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016838882510524303,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 2,
+            "superposition_defect": 0.4999261120141865
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7898966704936854,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 2,
+            "superposition_defect": 0.5108615339145854
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8212782242632989,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 2,
+            "superposition_defect": 0.4966750406383922
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015690776884806735,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 3,
+            "superposition_defect": 0.5037190286192799
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.6333716035208573,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 3,
+            "superposition_defect": 0.4989901975272154
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8798316111748947,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 3,
+            "superposition_defect": 0.5020934929313827
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 4,
+            "superposition_defect": 0.5014531303876656
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7428243398392652,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 4,
+            "superposition_defect": 0.5096793261415694
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6463834672789897,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 4,
+            "superposition_defect": 0.48854736219890643
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 5,
+            "superposition_defect": 0.5002709226146496
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7210103329506314,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 5,
+            "superposition_defect": 0.49086251908772965
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.815537696134711,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 5,
+            "superposition_defect": 0.49608393675188417
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 6,
+            "superposition_defect": 0.494901728978868
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8258706467661692,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 6,
+            "superposition_defect": 0.4888921727993695
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8009950248756219,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 6,
+            "superposition_defect": 0.4920939855179548
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 7,
+            "superposition_defect": 0.49096103640214767
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.6241867585151167,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 7,
+            "superposition_defect": 0.4961331954090932
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.7053195560658247,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 7,
+            "superposition_defect": 0.494212107777942
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.015308075009567547,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.016456180635285114,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.004209720627631,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 8,
+            "superposition_defect": 0.49839909364070734
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8909299655568312,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 8,
+            "superposition_defect": 0.4976109551253633
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.902793723689246,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 8,
+            "superposition_defect": 0.48815329294123444
+          }
+        ],
+        "status": "exploratory_measurements",
+        "summary": [
+          {
+            "algebraic_degree": 0,
+            "compression_max": 0.015690776884806735,
+            "compression_mean": 0.015403750478377344,
+            "compression_min": 0.015308075009567547,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.016838882510524303,
+            "compression_mean": 0.016504018369690013,
+            "compression_min": 0.016456180635285114,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 204
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.004209720627631,
+            "compression_mean": 1.004209720627631,
+            "compression_min": 1.004209720627631,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 60
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.004209720627631,
+            "compression_mean": 1.004209720627631,
+            "compression_min": 1.004209720627631,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 90
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.004209720627631,
+            "compression_mean": 1.004209720627631,
+            "compression_min": 1.004209720627631,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 105
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.004209720627631,
+            "compression_mean": 1.004209720627631,
+            "compression_min": 1.004209720627631,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 150
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 1.004209720627631,
+            "compression_mean": 1.004209720627631,
+            "compression_min": 1.004209720627631,
+            "defect_mean": 0.498282104329836,
+            "is_affine": false,
+            "rule": 30
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 0.8909299655568312,
+            "compression_mean": 0.7577497129735936,
+            "compression_min": 0.6241867585151167,
+            "defect_mean": 0.4981651150189646,
+            "is_affine": false,
+            "rule": 54
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_max": 0.902793723689246,
+            "compression_mean": 0.7675086107921929,
+            "compression_min": 0.567929582854956,
+            "defect_mean": 0.49422442244224424,
+            "is_affine": false,
+            "rule": 110
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "id": "CA-003",
+        "kind": "ca",
+        "phase": "exploratory",
+        "prediction_status": "agent_proposal_not_selected_by_Finn",
+        "question": "Does ring width alone change the compression comparison?",
+        "rules": [
+          0,
+          204,
+          60,
+          90,
+          105,
+          150,
+          30,
+          54,
+          110
+        ],
+        "schema_version": 1,
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "steps": 200,
+        "width": 128
+      },
+      "label": "width",
+      "manifest": {
+        "config_sha256": "7a53b658f99da28258473100d60401feb85c7b4cb73ee712a8f7badaade4d6be",
+        "git_commit": "c3002271ebe4106ca1602bdd00ab9fd7673e6110",
+        "git_dirty": true,
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14",
+        "source_sha256": {
+          "ca.py": "5342d724ce93834573002496a4f1133b4850ced09723cd4a68ba81e19c1f9b98",
+          "research/__init__.py": "a5861da428e5ebe1d13c90bd11e441f627eb52643728f78c09a0aa54f3e243d8",
+          "research/ca_trial.py": "c40e3194ec7a39490d6302d7dc0bdc3ddf5d71a062bafcc4b72dfa670b3120b7",
+          "research/common.py": "ac7e7e161653ae907bc7e637348771c91760db10b70525b41dd60a820f0c3a91",
+          "research/hooks.py": "725dc3a50f3f3f415a4e09c243ae294dd9ce45f28779961cfa97b8a746a40430",
+          "research/neural.py": "ad8f7aa4c28838899529bd7beeed68f9852efc6466d8653352df4a0df4ff255f",
+          "research/session.py": "90b5723e137fafba30bd4eff506e96d8a35c4efabb081b551ea8595315dd04c5"
+        },
+        "upstream_commit": "07635fdfb53f6a1a4e9b38488ab48c8febc56e58",
+        "zlib": "1.3.2"
+      },
+      "results": {
+        "claim_limit": "Affine structure is not computational richness. No replacement complexity metric has been validated.",
+        "human_interpretation": null,
+        "records": [
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.47574626865671643,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2478233830845771,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.34577114427860695,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3445273631840796,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 1,
+            "superposition_defect": 0.49720149253731344
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8115671641791045,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 1,
+            "superposition_defect": 0.5043532338308457
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.7058457711442786,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 1,
+            "superposition_defect": 0.5053249378109452
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014925373134328358,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01585820895522388,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.47139303482587064,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.24751243781094528,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.34421641791044777,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3451492537313433,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 2,
+            "superposition_defect": 0.49634639303482586
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.6853233830845771,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 2,
+            "superposition_defect": 0.49661847014925375
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8815298507462687,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 2,
+            "superposition_defect": 0.4910603233830846
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014925373134328358,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01585820895522388,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.46548507462686567,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.24284825870646767,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3454601990049751,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3445273631840796,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 3,
+            "superposition_defect": 0.4964241293532338
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7481343283582089,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 3,
+            "superposition_defect": 0.49933924129353235
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.7381840796019901,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 3,
+            "superposition_defect": 0.49634639303482586
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.4760572139303483,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.24720149253731344,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.34483830845771146,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3460820895522388,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 4,
+            "superposition_defect": 0.49595771144278605
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7950870646766169,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 4,
+            "superposition_defect": 0.5038090796019901
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6651119402985075,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 4,
+            "superposition_defect": 0.47613495024875624
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.4717039800995025,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2478233830845771,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3451492537313433,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3454601990049751,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 5,
+            "superposition_defect": 0.49770677860696516
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7254353233830846,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 5,
+            "superposition_defect": 0.5030317164179104
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8588308457711443,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 5,
+            "superposition_defect": 0.5147310323383084
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.4704601990049751,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.24813432835820895,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3445273631840796,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.34421641791044777,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 6,
+            "superposition_defect": 0.498056592039801
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.826181592039801,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 6,
+            "superposition_defect": 0.5070740049751243
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8212064676616916,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 6,
+            "superposition_defect": 0.5069185323383084
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.4760572139303483,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2484452736318408,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3451492537313433,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.34577114427860695,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 7,
+            "superposition_defect": 0.49685167910447764
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.6564054726368159,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 7,
+            "superposition_defect": 0.48600746268656714
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6206467661691543,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 7,
+            "superposition_defect": 0.4992615049751244
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.014614427860696517,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01554726368159204,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.4465174129353234,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2316542288557214,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3451492537313433,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3451492537313433,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0034203980099503,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 8,
+            "superposition_defect": 0.5014381218905473
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8479477611940298,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 8,
+            "superposition_defect": 0.49634639303482586
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.7845149253731343,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 8,
+            "superposition_defect": 0.5027985074626866
+          }
+        ],
+        "status": "exploratory_measurements",
+        "summary": [
+          {
+            "algebraic_degree": 0,
+            "compression_max": 0.014925373134328358,
+            "compression_mean": 0.014692164179104477,
+            "compression_min": 0.014614427860696517,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.01585820895522388,
+            "compression_mean": 0.015625,
+            "compression_min": 0.01554726368159204,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 204
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.4760572139303483,
+            "compression_mean": 0.46917754975124376,
+            "compression_min": 0.4465174129353234,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 60
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.2484452736318408,
+            "compression_mean": 0.24518034825870647,
+            "compression_min": 0.2316542288557214,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 90
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.34577114427860695,
+            "compression_mean": 0.34503264925373134,
+            "compression_min": 0.34421641791044777,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 105
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.3460820895522388,
+            "compression_mean": 0.3451103855721393,
+            "compression_min": 0.34421641791044777,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 150
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 1.0034203980099503,
+            "compression_mean": 1.0034203980099503,
+            "compression_min": 1.0034203980099503,
+            "defect_mean": 0.49749786225124376,
+            "is_affine": false,
+            "rule": 30
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 0.8479477611940298,
+            "compression_mean": 0.7620102611940298,
+            "compression_min": 0.6564054726368159,
+            "defect_mean": 0.4995724502487562,
+            "is_affine": false,
+            "rule": 54
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_max": 0.8815298507462687,
+            "compression_mean": 0.7594838308457712,
+            "compression_min": 0.6206467661691543,
+            "defect_mean": 0.49907202269900497,
+            "is_affine": false,
+            "rule": 110
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "id": "CA-004",
+        "kind": "ca",
+        "phase": "exploratory",
+        "prediction_status": "agent_proposal_not_selected_by_Finn",
+        "question": "Does run length alone change the compression comparison?",
+        "rules": [
+          0,
+          204,
+          60,
+          90,
+          105,
+          150,
+          30,
+          54,
+          110
+        ],
+        "schema_version": 1,
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "steps": 256,
+        "width": 101
+      },
+      "label": "horizon",
+      "manifest": {
+        "config_sha256": "019b29f16bf51d15b97bef2f895bc4502096b0d0b64ccaeeaf736142f526d34b",
+        "git_commit": "c3002271ebe4106ca1602bdd00ab9fd7673e6110",
+        "git_dirty": true,
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14",
+        "source_sha256": {
+          "ca.py": "5342d724ce93834573002496a4f1133b4850ced09723cd4a68ba81e19c1f9b98",
+          "research/__init__.py": "a5861da428e5ebe1d13c90bd11e441f627eb52643728f78c09a0aa54f3e243d8",
+          "research/ca_trial.py": "c40e3194ec7a39490d6302d7dc0bdc3ddf5d71a062bafcc4b72dfa670b3120b7",
+          "research/common.py": "ac7e7e161653ae907bc7e637348771c91760db10b70525b41dd60a820f0c3a91",
+          "research/hooks.py": "725dc3a50f3f3f415a4e09c243ae294dd9ce45f28779961cfa97b8a746a40430",
+          "research/neural.py": "ad8f7aa4c28838899529bd7beeed68f9852efc6466d8653352df4a0df4ff255f",
+          "research/session.py": "90b5723e137fafba30bd4eff506e96d8a35c4efabb081b551ea8595315dd04c5"
+        },
+        "upstream_commit": "07635fdfb53f6a1a4e9b38488ab48c8febc56e58",
+        "zlib": "1.3.2"
+      },
+      "results": {
+        "claim_limit": "Affine structure is not computational richness. No replacement complexity metric has been validated.",
+        "human_interpretation": null,
+        "records": [
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01406764441783897,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 1,
+            "superposition_defect": 0.49674461609585085
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8195151152349596,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 1,
+            "superposition_defect": 0.4981700504680818
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.469619874289135,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 1,
+            "superposition_defect": 0.4923912624725508
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.014366956001197246,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 2,
+            "superposition_defect": 0.4995569595870093
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7662376533971865,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 2,
+            "superposition_defect": 0.5079939900604846
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8207123615683927,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 2,
+            "superposition_defect": 0.4920445351928189
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.014366956001197246,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 3,
+            "superposition_defect": 0.5027160303578996
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.5480395091290033,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 3,
+            "superposition_defect": 0.4969757676156721
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8219096079018258,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 3,
+            "superposition_defect": 0.49763069692183226
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01406764441783897,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 4,
+            "superposition_defect": 0.5013676464922757
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7213409158934451,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 4,
+            "superposition_defect": 0.501598798012097
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.587847949715654,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 4,
+            "superposition_defect": 0.49046499980737374
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01406764441783897,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 5,
+            "superposition_defect": 0.49639788881611896
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.708171206225681,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 5,
+            "superposition_defect": 0.48977154524791
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8117330140676444,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 5,
+            "superposition_defect": 0.4955888584967446
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.014366956001197246,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 6,
+            "superposition_defect": 0.4953577069769234
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7847949715653996,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 6,
+            "superposition_defect": 0.4952036059637092
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6964980544747081,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 6,
+            "superposition_defect": 0.4974765959086181
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01406764441783897,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 7,
+            "superposition_defect": 0.49381669684478174
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.5830589643819216,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 7,
+            "superposition_defect": 0.49493392919058443
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6988925471415743,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 7,
+            "superposition_defect": 0.5005586161729013
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.013169709667764143,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.01406764441783897,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.003292427416941,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 8,
+            "superposition_defect": 0.49886350502754556
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8748877581562406,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 8,
+            "superposition_defect": 0.49531918172361983
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8632146064052679,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 8,
+            "superposition_defect": 0.49208306044612243
+          }
+        ],
+        "status": "exploratory_measurements",
+        "summary": [
+          {
+            "algebraic_degree": 0,
+            "compression_max": 0.013169709667764143,
+            "compression_mean": 0.013169709667764143,
+            "compression_min": 0.013169709667764143,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.014366956001197246,
+            "compression_mean": 0.014179886261598324,
+            "compression_min": 0.01406764441783897,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 204
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.003292427416941,
+            "compression_mean": 1.003292427416941,
+            "compression_min": 1.003292427416941,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 60
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.003292427416941,
+            "compression_mean": 1.003292427416941,
+            "compression_min": 1.003292427416941,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 90
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.003292427416941,
+            "compression_mean": 1.003292427416941,
+            "compression_min": 1.003292427416941,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 105
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 1.003292427416941,
+            "compression_mean": 1.003292427416941,
+            "compression_min": 1.003292427416941,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 150
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 1.003292427416941,
+            "compression_mean": 1.003292427416941,
+            "compression_min": 1.003292427416941,
+            "defect_mean": 0.49810263127480064,
+            "is_affine": false,
+            "rule": 30
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 0.8748877581562406,
+            "compression_mean": 0.7257557617479796,
+            "compression_min": 0.5480395091290033,
+            "defect_mean": 0.4974958585352699,
+            "is_affine": false,
+            "rule": 54
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_max": 0.8632146064052679,
+            "compression_mean": 0.7213035019455253,
+            "compression_min": 0.469619874289135,
+            "defect_mean": 0.49477982817737026,
+            "is_affine": false,
+            "rule": 110
+          }
+        ]
+      }
+    },
+    {
+      "config": {
+        "id": "CA-002",
+        "kind": "ca",
+        "phase": "exploratory",
+        "prediction_status": "agent_proposal_not_selected_by_Finn",
+        "question": "Does the comparison survive a different ring width and time horizon?",
+        "rules": [
+          0,
+          204,
+          60,
+          90,
+          105,
+          150,
+          30,
+          54,
+          110
+        ],
+        "schema_version": 1,
+        "seeds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "steps": 256,
+        "width": 128
+      },
+      "label": "boundary",
+      "manifest": {
+        "config_sha256": "9ddbcbbf17c42960e7a16b3fb89ecc8c5921c169f399b9eddb5cdfe334d8b9b1",
+        "git_commit": "c3002271ebe4106ca1602bdd00ab9fd7673e6110",
+        "git_dirty": true,
+        "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+        "python": "3.12.14",
+        "source_sha256": {
+          "ca.py": "5342d724ce93834573002496a4f1133b4850ced09723cd4a68ba81e19c1f9b98",
+          "research/__init__.py": "a5861da428e5ebe1d13c90bd11e441f627eb52643728f78c09a0aa54f3e243d8",
+          "research/ca_trial.py": "c40e3194ec7a39490d6302d7dc0bdc3ddf5d71a062bafcc4b72dfa670b3120b7",
+          "research/common.py": "ac7e7e161653ae907bc7e637348771c91760db10b70525b41dd60a820f0c3a91",
+          "research/session.py": "8766c718cb2f4501c15b6fd7b85e2e8d0fef37c0457b0637ecd08a0ec0aca0cf"
+        },
+        "upstream_commit": "07635fdfb53f6a1a4e9b38488ab48c8febc56e58",
+        "zlib": "1.3.2"
+      },
+      "results": {
+        "claim_limit": "Affine structure is not computational richness. No replacement complexity metric has been validated.",
+        "human_interpretation": null,
+        "records": [
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.372568093385214,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19503891050583658,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2714007782101167,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2706712062256809,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 1,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 1,
+            "superposition_defect": 0.4985408560311284
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7553501945525292,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 1,
+            "superposition_defect": 0.5000911964980544
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6794747081712063,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 1,
+            "superposition_defect": 0.5010335603112841
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.012889105058365758,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013861867704280155,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.36892023346303504,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19479571984435798,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2704280155642023,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2711575875486381,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 2,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 2,
+            "superposition_defect": 0.49668652723735407
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.644455252918288,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 2,
+            "superposition_defect": 0.5008511673151751
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8754863813229572,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 2,
+            "superposition_defect": 0.49750729571984437
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.012889105058365758,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013861867704280155,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3650291828793774,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19114785992217898,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2714007782101167,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2706712062256809,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 3,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 3,
+            "superposition_defect": 0.4962913424124514
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7205739299610895,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 3,
+            "superposition_defect": 0.5042254377431906
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6767996108949417,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 3,
+            "superposition_defect": 0.49407222762645914
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3728112840466926,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19455252918287938,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2709143968871595,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2714007782101167,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 4,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 4,
+            "superposition_defect": 0.49717290856031127
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7806420233463035,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 4,
+            "superposition_defect": 0.5011855544747081
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6160019455252919,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 4,
+            "superposition_defect": 0.4805447470817121
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.36940661478599224,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19503891050583658,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2711575875486381,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2714007782101167,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 5,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 5,
+            "superposition_defect": 0.49775048638132297
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.7123054474708171,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 5,
+            "superposition_defect": 0.5004255836575876
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.8346303501945526,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 5,
+            "superposition_defect": 0.5099404182879378
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.36867704280155644,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19528210116731518,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2706712062256809,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2704280155642023,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 6,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 6,
+            "superposition_defect": 0.49984800583657585
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8025291828793775,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 6,
+            "superposition_defect": 0.5058365758754864
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.7947470817120622,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 6,
+            "superposition_defect": 0.5088460603112841
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.3732976653696498,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.19552529182879377,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2709143968871595,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2716439688715953,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 7,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 7,
+            "superposition_defect": 0.4973553015564202
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.6315661478599222,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 7,
+            "superposition_defect": 0.490971546692607
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.5714980544747081,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 7,
+            "superposition_defect": 0.49428501945525294
+          },
+          {
+            "algebraic_degree": 0,
+            "compression_ratio": 0.01264591439688716,
+            "is_affine": true,
+            "rule": 0,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.013618677042801557,
+            "is_affine": true,
+            "rule": 204,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.35043774319066145,
+            "is_affine": true,
+            "rule": 60,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.182636186770428,
+            "is_affine": true,
+            "rule": 90,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2711575875486381,
+            "is_affine": true,
+            "rule": 105,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_ratio": 0.2709143968871595,
+            "is_affine": true,
+            "rule": 150,
+            "seed": 8,
+            "superposition_defect": 0.0
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 1.0026750972762646,
+            "is_affine": false,
+            "rule": 30,
+            "seed": 8,
+            "superposition_defect": 0.5022191147859922
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_ratio": 0.8373054474708171,
+            "is_affine": false,
+            "rule": 54,
+            "seed": 8,
+            "superposition_defect": 0.49416342412451364
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_ratio": 0.6845817120622568,
+            "is_affine": false,
+            "rule": 110,
+            "seed": 8,
+            "superposition_defect": 0.5032222762645915
+          }
+        ],
+        "status": "exploratory_measurements",
+        "summary": [
+          {
+            "algebraic_degree": 0,
+            "compression_max": 0.012889105058365758,
+            "compression_mean": 0.01270671206225681,
+            "compression_min": 0.01264591439688716,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 0
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.013861867704280155,
+            "compression_mean": 0.013679474708171206,
+            "compression_min": 0.013618677042801557,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 204
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.3732976653696498,
+            "compression_mean": 0.3676434824902724,
+            "compression_min": 0.35043774319066145,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 60
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.19552529182879377,
+            "compression_mean": 0.19300218871595332,
+            "compression_min": 0.182636186770428,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 90
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.2714007782101167,
+            "compression_mean": 0.271005593385214,
+            "compression_min": 0.2704280155642023,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 105
+          },
+          {
+            "algebraic_degree": 1,
+            "compression_max": 0.2716439688715953,
+            "compression_mean": 0.2710359922178988,
+            "compression_min": 0.2704280155642023,
+            "defect_mean": 0.0,
+            "is_affine": true,
+            "rule": 150
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 1.0026750972762646,
+            "compression_mean": 1.0026750972762646,
+            "compression_min": 1.0026750972762646,
+            "defect_mean": 0.49823306785019456,
+            "is_affine": false,
+            "rule": 30
+          },
+          {
+            "algebraic_degree": 2,
+            "compression_max": 0.8373054474708171,
+            "compression_mean": 0.735590953307393,
+            "compression_min": 0.6315661478599222,
+            "defect_mean": 0.49971881079766534,
+            "is_affine": false,
+            "rule": 54
+          },
+          {
+            "algebraic_degree": 3,
+            "compression_max": 0.8754863813229572,
+            "compression_mean": 0.7166524805447471,
+            "compression_min": 0.5714980544747081,
+            "defect_mean": 0.49868145063229574,
+            "is_affine": false,
+            "rule": 110
+          }
+        ]
+      }
+    }
+  ]
+}
